@@ -1,8 +1,8 @@
-# Team Treehouse Tech Degree - ___ - P___ - ___
+# Luke Skywalker Web
 
 ## Introduction
 
-This is the ___ project of ___ . The complete instruction of the project can be seen in [project_instructions.pdf](https://github.com/wahidyankf/___/blob/master/project_instructions.pdf), and the initial code and assets can be seen in the `initial_assets` folder.
+This is the ___. The complete instruction of the project can be seen in [project_instructions.pdf](https://github.com/wahidyankf/___/blob/master/project_instructions.pdf), and the initial code and assets can be seen in the `initial_assets` folder.
 
 ## Usage
 
