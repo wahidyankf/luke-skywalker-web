@@ -54,7 +54,7 @@ const controller = {
           view.renderBio();
           view.renderMovies();
           view.renderRelatedMovie();
-        }, 1250);
+        }, 2000);
       });
   },
 
