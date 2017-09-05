@@ -1,5 +1,5 @@
-const test = () => {
-  console.log('Hello from app.js');
-};
+$(() => {
+  view.renderInit();
 
-test;
+  controller.fetchPerson(controller.getName());
+});
