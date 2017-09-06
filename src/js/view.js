@@ -10,13 +10,15 @@ const view = {
       </div>
       <div class="bio-data"></div>
     </div>
-    <div class="person-movie">
-      <h2>${controller.getLastName()} Movie's</h2>
-      <div class="movies"></div>
-      <span id="see-more-movie">See More</span>
-    </div>
-    <div class="related-movie">
-      <h2>Related Another Movie's</h2>
+    <div class="movie-section">
+      <div class="person-movie">
+        <h2>${controller.getLastName()} Movie's</h2>
+        <div class="movies"></div>
+        <span id="see-more-movie">See More</span>
+      </div>
+      <div class="related-movie">
+        <h2>Related Another Movie's</h2>
+      </div>
     </div>
     `;
 

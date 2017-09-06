@@ -1,5 +1,13 @@
 .biography {
   padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $break-medium) {
+    flex-direction: row;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
 
   .profile-picture {
     margin: auto;
@@ -10,10 +18,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: $break-medium) {
+      width: 10%;
+      align-self: center;
+      width: 100px;
+      height: 100px;
+      margin-left: 1.5em;
+      margin-right: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+      align-content: center;
+    }
   }
 
   .bio-data {
     padding: 0.5em;
+    margin: auto;
+    @media screen and (min-width: $break-medium) {
+      width: 80%;
+      padding: 0;
+      margin-left: 1em;
+      margin-top: 0;
+      align-self: center;
+    }
+  }
+}
+.movie-section {
+  @media screen and (min-width: $break-large) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -22,22 +58,69 @@
   flex-direction: column;
   flex-wrap: wrap;
 
+  @media screen and (min-width: $break-medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $break-large) {
+    width: 66%;
+  }
+
   h2 {
     order: 1;
+    align-self: center;
+    @media screen and (min-width: $break-medium) {
+      width: 40%;
+      margin-bottom: 0.25em;
+    }
+    @media screen and (min-width: $break-large) {
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
 
   .movies {
     order: 2;
+
+    @media screen and (min-width: $break-medium) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      order: 3;
+      padding-top: 0;
+    }
+    @media screen and (min-width: $break-large) {
+      justify-content: space-between;
+      padding-top: 0;
+    }
   }
 
   #see-more-movie {
     order: 3;
+
+    @media screen and (min-width: $break-medium) {
+      margin-top: 0;
+      margin-right: 1.25em;
+      order: 2;
+      width: 40%;
+      align-self: center;
+    }
   }
 }
 
 .movie-item {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  @media screen and (min-width: $break-medium) {
+    width: 47%;
+  }
+  @media screen and (min-width: $break-large) {
+    width: 23%;
+    margin: 0em;
+  }
 }
 
 .movie-item-play {
@@ -56,6 +139,19 @@
   margin-top: 0.1em;
 }
 
+.related-movie {
+  @media screen and (min-width: $break-large) {
+    width: 30%;
+  }
+
+  h2 {
+    @media screen and (min-width: $break-large) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+  }
+}
+
 .related-movie-card {
   display: flex;
   justify-content: center;
@@ -69,6 +165,11 @@
   #see-more-crawl {
     order: 3;
     margin-right: 0.5em;
+    @media screen and (min-width: $break-medium) {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-right: 1.25em;
+    }
   }
 }
 .related-movie-desc,

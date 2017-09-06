@@ -378,7 +378,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.075em;
   font-size: 0.9em;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  max-width: 980px;
+  margin: auto;
+  padding: 0.25em; }
+  @media screen and (min-width: 768px) {
+    body {
+      padding: 1em; } }
 
 th {
   text-align: left; }
@@ -428,7 +434,7 @@ h2 {
   border-style: solid;
   border-color: lightgrey;
   border-width: 1px;
-  border-radius: 3px; }
+  border-radius: 6px 6px 3px 3px; }
 
 .movie-item-heading {
   color: #424242; }
@@ -449,7 +455,22 @@ h2 {
   color: white; }
 
 .biography {
-  padding-top: 1em; }
+  padding-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .biography {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em; } }
   .biography .profile-picture {
     margin: auto;
     margin-bottom: 0.5em;
@@ -465,8 +486,45 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media screen and (min-width: 768px) {
+      .biography .profile-picture {
+        width: 10%;
+        -ms-flex-item-align: center;
+            align-self: center;
+        width: 100px;
+        height: 100px;
+        margin-left: 1.5em;
+        margin-right: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
+        -ms-flex-line-pack: center;
+            align-content: center; } }
   .biography .bio-data {
-    padding: 0.5em; }
+    padding: 0.5em;
+    margin: auto; }
+    @media screen and (min-width: 768px) {
+      .biography .bio-data {
+        width: 80%;
+        padding: 0;
+        margin-left: 1em;
+        margin-top: 0;
+        -ms-flex-item-align: center;
+            align-self: center; } }
+
+@media screen and (min-width: 960px) {
+  .movie-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 .person-movie {
   display: -webkit-box;
@@ -478,22 +536,85 @@ h2 {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media screen and (min-width: 768px) {
+    .person-movie {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  @media screen and (min-width: 960px) {
+    .person-movie {
+      width: 66%; } }
   .person-movie h2 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
-            order: 1; }
+            order: 1;
+    -ms-flex-item-align: center;
+        align-self: center; }
+    @media screen and (min-width: 768px) {
+      .person-movie h2 {
+        width: 40%;
+        margin-bottom: 0.25em; } }
+    @media screen and (min-width: 960px) {
+      .person-movie h2 {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0; } }
   .person-movie .movies {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2; }
+    @media screen and (min-width: 768px) {
+      .person-movie .movies {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+        padding-top: 0; } }
+    @media screen and (min-width: 960px) {
+      .person-movie .movies {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-top: 0; } }
   .person-movie #see-more-movie {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3; }
+    @media screen and (min-width: 768px) {
+      .person-movie #see-more-movie {
+        margin-top: 0;
+        margin-right: 1.25em;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        width: 40%;
+        -ms-flex-item-align: center;
+            align-self: center; } }
 
 .movie-item {
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
+  @media screen and (min-width: 768px) {
+    .movie-item {
+      width: 47%; } }
+  @media screen and (min-width: 960px) {
+    .movie-item {
+      width: 23%;
+      margin: 0em; } }
 
 .movie-item-play {
   display: -webkit-box;
@@ -513,6 +634,15 @@ h2 {
 
 .movie-item-heading {
   margin-top: 0.1em; }
+
+@media screen and (min-width: 960px) {
+  .related-movie {
+    width: 30%; } }
+
+@media screen and (min-width: 960px) {
+  .related-movie h2 {
+    margin-top: 2em;
+    margin-bottom: 2em; } }
 
 .related-movie-card {
   display: -webkit-box;
@@ -538,6 +668,11 @@ h2 {
         -ms-flex-order: 3;
             order: 3;
     margin-right: 0.5em; }
+    @media screen and (min-width: 768px) {
+      .related-movie-card #see-more-crawl {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-right: 1.25em; } }
 
 .related-movie-desc,
 .crawl,

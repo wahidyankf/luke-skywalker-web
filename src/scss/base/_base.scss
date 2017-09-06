@@ -4,6 +4,12 @@ body {
   letter-spacing: 0.075em;
   font-size: 0.9em;
   line-height: 1.5em;
+  max-width: 980px;
+  margin: auto;
+  padding: 0.25em;
+  @media screen and (min-width: $break-medium) {
+    padding: 1em;
+  }
 }
 
 th {
