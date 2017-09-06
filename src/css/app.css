@@ -506,6 +506,7 @@ h2 {
       .biography .bio-data {
         width: 80%;
         padding: 0;
+        padding-top: 0.5em;
         margin-left: 1em;
         margin-top: 0;
         -ms-flex-item-align: center;
