@@ -6,25 +6,37 @@ This is the ___. The complete instruction of the project can be seen in [project
 
 ## Usage
 
-### Demo pages
+1. Download / Clone this repo.
 
-You can see the demo page [here](https://wahidyankf.github.io/___/).
+2. Go inside this repo's root folder.
 
-### Result
+3. Go to terminal and invoke: `npm install`, `bower install` to install the project and all dependencies locally.
 
-The result can be seen in the gh-pages branch of this repository.
+4. Type `gulp serve` on terminal and open `localhost:3000` in the browser.
 
 ### The Source
 
 The source of this app can be seen in the src folder of master branch. 
 
-## Testing
+## Developer's note
 
-This app was tested using [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) validator.
+1. I need more time to tinkering with javaScript `promise` to chain the fetching/AJAX dependency. Thus, I am kind of "cheating" by manually synchronize the chaining using javaScript's `setTimeout()` function.
+
+2. Because of (1), you will need internet that is fast 3g or higher in order for this app to run correctly (I simulated it with fast 3g throttling connection simulation on Google Chrome's Dev Tools).
 
 ## Sreenshots
 
-![screenshot 1](screenshots/___.png)
+Display - Small Screen
+
+![screenshot 1](screenshots/screenshot_small_screen.png)
+
+Display - Medium Screen
+
+![screenshot 2](screenshots/screenshot_medium_screen.png)
+
+Display - Large Screen
+
+![screenshot 3](screenshots/screenshot_large_screen.png)
 
 ## License
 
