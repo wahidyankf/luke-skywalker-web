@@ -20,9 +20,11 @@ The source of this app can be seen in the src folder of master branch.
 
 ## Developer's note
 
-1. I need more time to tinkering with javaScript `promise` to chain the fetching/AJAX dependency. Thus, I am kind of "cheating" by manually synchronize the chaining using javaScript's `setTimeout()` function.
+1. I hereby declare that this project is written by me (Wahidyan Kresna Fridayoka) and is a result of my own work.
 
-2. Because of (1), you will need internet that is fast 3g or higher in order for this app to run correctly (I simulated it with fast 3g throttling connection simulation on Google Chrome's Dev Tools).
+2. I need more time to tinkering with javaScript `promise` to chain the fetching/AJAX dependency. Thus, I am kind of "cheating" by manually synchronize the chaining using javaScript's `setTimeout()` function.
+
+3. Because of (2), you will need internet that is fast 3g or higher in order for this app to run correctly (I simulated it with fast 3g throttling connection simulation on Google Chrome's Dev Tools).
 
 ## Sreenshots
 
