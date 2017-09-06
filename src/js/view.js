@@ -30,10 +30,19 @@ const view = {
     <table>
       <tr><th>Height:</th><td>${data.bio.height} cm</td></tr>
       <tr><th>Mass:</th><td>${data.bio.mass} kg</td></tr>
-      <tr><th>Hair Color:</th><td>${data.bio.hairColor}</td></tr>
-      <tr><th>Skin Color:</th><td>${data.bio.skinColor}</td></tr>
+      <tr><th>Hair Color:</th><td>${data.bio.hairColor.replace(
+        data.bio.hairColor[0],
+        data.bio.hairColor[0].toUpperCase()
+      )}</td></tr>
+      <tr><th>Skin Color:</th><td>${data.bio.skinColor.replace(
+        data.bio.skinColor[0],
+        data.bio.skinColor[0].toUpperCase()
+      )}</td></tr>
       <tr><th>Birth Year:</th><td>${data.bio.birthYear}</td></tr>
-      <tr><th>Gender:</th><td>${data.bio.gender}</td></tr>
+      <tr><th>Gender:</th><td>${data.bio.gender.replace(
+        data.bio.gender[0],
+        data.bio.gender[0].toUpperCase()
+      )}</td></tr>
     </table>
     `;
 
@@ -49,6 +58,7 @@ const view = {
       } else {
         playClass = 'movie-item-play-even';
       }
+
       moviesBody.push(`
       <div class="movie-item">
         <div class="${playClass} movie-item-play">
@@ -59,7 +69,7 @@ const view = {
           <div class="movie-item-data">
             <div class="movie-item-data-top">
               <p>Director: </p>
-              <p>${movieData.director}</p>
+              <p class="movie-item-director">${movieData.director}</p>
             </div>
             <div class="movie-item-data-bottom">
               <p>Release</p>
