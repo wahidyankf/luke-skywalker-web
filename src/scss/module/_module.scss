@@ -44,15 +44,23 @@
 
 .movie-item-heading {
   color: $color-movie-item-heading;
+  font-size: 1.1em;
 }
 
 .movie-item-data {
   color: $color-movie-item-data;
   line-height: 0.5em;
 
+  p:nth-child(2) {
+  }
+
   .movie-item-data-top {
     margin-bottom: 1.5em;
   }
+}
+
+.movie-item-director {
+  line-height: 1.25em;
 }
 
 .related-movie-card {
