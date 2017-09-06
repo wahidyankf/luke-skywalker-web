@@ -1,0 +1,67 @@
+.biography {
+  background-color: $bgcolor-biography;
+}
+
+.bio-data {
+  color: white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.profile-picture {
+  text-align: center;
+  color: white;
+  background-color: $bgcolor-profile-picture;
+}
+
+#see-more-movie,
+#see-more-crawl {
+  color: $color-see-more;
+  text-align: right;
+}
+
+.movie-item-play {
+  text-align: center;
+  padding: 1em;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.movie-item-play-odd {
+  background-color: $bgcolor-movie-item-play-odd;
+}
+
+.movie-item-play-even {
+  background-color: $bgcolor-movie-item-play-even;
+}
+
+.movie-item {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.movie-item-heading {
+  color: $color-movie-item-heading;
+}
+
+.movie-item-data {
+  color: $color-movie-item-data;
+  line-height: 0.5em;
+
+  .movie-item-data-top {
+    margin-bottom: 1.5em;
+  }
+}
+
+.related-movie-card {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+}
+
+.related-movie-data {
+  background-color: $bgcolor-related-movie-data;
+  color: white;
+}

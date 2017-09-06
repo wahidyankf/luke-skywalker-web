@@ -1,3 +1,25 @@
+body {
+  background-color: $bgcolor-body;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.075em;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
 th {
   text-align: left;
+}
+
+td {
+  padding-left: 1em;
+}
+
+h1 {
+  border-left-style: solid;
+  border-color: $color-h3;
+  padding-left: 0.5em;
+}
+
+h2 {
+  color: $color-h2;
 }

@@ -1,0 +1,89 @@
+.biography {
+  padding-top: 1em;
+
+  .profile-picture {
+    margin: auto;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio-data {
+    padding: 0.5em;
+  }
+}
+
+.person-movie {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  h2 {
+    order: 1;
+  }
+
+  .movies {
+    order: 2;
+  }
+
+  #see-more-movie {
+    order: 3;
+  }
+}
+
+.movie-item {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.movie-item-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5em;
+  margin-bottom: 0.5em;
+}
+
+.movie-item-data-wrapper {
+  padding: 0.5em;
+}
+
+.movie-item-heading {
+  margin-top: 0.1em;
+}
+
+.related-movie-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .related-movie-data {
+    order: 1;
+  }
+  .crawl {
+    order: 2;
+  }
+  #see-more-crawl {
+    order: 3;
+    margin-right: 0.5em;
+  }
+}
+.related-movie-desc,
+.crawl,
+.related-movie-heading {
+  padding: 0.5em;
+}
+
+.related-movie-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.crawl {
+  margin-top: 0em;
+  padding-top: 0em;
+}
