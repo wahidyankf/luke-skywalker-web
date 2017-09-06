@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the ___. The complete instruction of the project can be seen in [project_instructions.pdf](https://github.com/wahidyankf/___/blob/master/project_instructions.pdf), and the initial code and assets can be seen in the `initial_assets` folder.
+In this project, a mock up was given to me (you can see it in `initial assets` folder) and I have to replicate it using HTML, CSS, and javaScript using the data that is given through [The Star Wars API](https://swapi.co/).
 
 ## Usage
 
